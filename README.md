@@ -1,24 +1,12 @@
-# wang
+## wangEditor4 内存泄漏Demo
 
-## Project setup
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
+npm i
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### 问题复现步骤
 
-### Lints and fixes files
-```
-npm run lint
-```
+1. 打开页面 http://localhost:8080/#/
+2. 点击 `wangEditor4 内存测试，存在泄漏` 按钮，然后点击 `Back` 按钮返回，反复上面操作数次，发现内存上升并且无法被回收
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
